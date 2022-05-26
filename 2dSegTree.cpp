@@ -61,7 +61,7 @@ struct SegmentTree2d{
     }
     int query(int lx,int rx,int ly,int ry)
     {
-        return queryx(1,0,lenx,lx,rx,ly,ry);
+        return queryx(1,0,lenx - 1,lx,rx,ly,ry);
     }
     void updatey(int idx, int tlx, int trx, int idy, int tly, int tryy, int y, int val)
     {
